@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)), url(images/header-image.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.lang-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 18px;
+}
+.lang-btn img{
+    width: 10px;
+    margin-left: 10px;
+}
+.lang-btn i{
+    width: 10px;
+    margin-right: 10px;
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.email-box{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.email-box input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    background: transparent;
+}
+.email-box button{
+    background: #db0001;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+    border-top: 10px solid #333;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.video-in-tv{
+    position: absolute;
+    width: 25%;
+    margin: -8.18% -31.65%;
+    z-index: -1;
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.video-in-devices{
+    position: absolute;
+    width: 22%;
+    margin: -11.4% -30%;
+    z-index: -1;
+}
+
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    border-top: 10px solid #333;
+    padding-top: 60px;
+}
+.faq h2{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.quest{
+    margin: 40px auto;
+    width: 100%;
+    max-width: 950px;
+}
+.quest li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.quest li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type='radio']{
+    display: none;
+}
+.quest .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.quest input[type='radio']:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.quest input[type='radio']:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.faq .email-box{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.faq small{
+    font-size: 13px;
+}
+
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 10px solid #333;
+    color: rgba(255,255,255,0.7);
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.col{
+    flex-basis: 20%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.col a{
+    display: block;
+    text-decoration: underline;
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.footer .lang-btn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.footer .lang-btn i{
+    width: 10px;
+    margin-right: 15px;
+}
+.copyright-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+
+
+@media only screen and (max-width:600px){
+    .logo{
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    nav .lang-btn{
+        padding: 4px 8px;
+    }
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .header-content h1{
+        font-size: 30px;
+    }
+    .email-box{
+        max-height: 45px;
+    }
+    .email-box button{
+        font-size: 12px;
+    }
+    .features h2{
+        font-size: 32px;
+    }
+    .features p{
+        font-size: 16px;
+    }
+    .row:nth-child(2), .row:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .features .row{
+        padding: 10px 0;
+    }
+    .faq h2{
+        font-size: 20px;
+    }
+    .quest li label{
+        font-size: 14px;
+        padding: 10px;
+    }
+    label::after{
+        font-size: 22px;
+    }
+    .quest .content p{
+        font-size: 14px;
+    }
+}
